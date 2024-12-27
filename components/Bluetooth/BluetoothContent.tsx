@@ -3,10 +3,12 @@ import { Button, StyleSheet } from 'react-native';
 
 import { ThemedView } from '@/components/ThemedView';
 import { ThemedText } from '@/components/ThemedText';
-import '@/scripts/bluetooth';
+import useConnectedDevicesWithBluetooth from '@/scripts/bluetooth';
 
 export function BluetoothContent() {
   const [isBluetoothActive, setIsBluetoothActive] = useState(false);
+
+  useConnectedDevicesWithBluetooth();
 
   return (
     <ThemedView>

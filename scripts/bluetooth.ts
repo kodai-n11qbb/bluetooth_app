@@ -1,6 +1,19 @@
 import { useState, useEffect } from 'react';
-import 'react-native-ble-plx';
+import { Platform } from 'react-native';
+
+import { BleManager } from 'react-native-ble-plx';
+
+
+function funcForIos(): void {
+}
+
+
 
 export default function useConnectedDevicesWithBluetooth() {
-  return 0;
+  Platform.select({
+    ios:     `${funcForIos()}`,
+    android: 'android',
+    web:     'web',
+    default: 'other'
+  });
 };
