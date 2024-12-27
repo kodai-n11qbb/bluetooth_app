@@ -5,8 +5,9 @@ import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
-import { Bluetooth } from '@/scripts/bluetooth';
 import { Button } from 'react-native';
+import { BluetoothContent } from '@/components/Bluetooth/BluetoothContent';
+
 
 export default function BluetoothScreen() {
   return (
@@ -28,9 +29,9 @@ export default function BluetoothScreen() {
 
       <ThemedView style={styles.stepContainer}>
         <ThemedText>
-          this is bluetooth page
+          this is bluetooth page{'\n'}
         </ThemedText>
-        <Button title="seach" onPress={() => alert('clicked')} />
+        <BluetoothContent/>
         <Button title="send" onPress={() => alert('clicked')} />
       </ThemedView>
 
