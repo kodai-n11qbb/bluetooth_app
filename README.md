@@ -3,12 +3,18 @@
 1. 目的
    - 競技用ロボットのログ出力・遠隔操作・戦術分析
 
-3. 使用方法
+2. 使用方法
    - gitでclone
    ```bash
    git clone https://github.com/kodai-n11qbb/bluetooth_app.git
    ```
    - もしくは、https://github.com/kodai-n11qbb/bluetooth_app からコードをダウンロード
+
+   - ios環境のためにpodをinstall
+   ```
+   cd ios
+   pod install
+   ```
 
 # - - - - ここからreact-native + expo の公式document - - - -
 
